@@ -1,0 +1,28 @@
+{
+  "name": "antigravity-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets Claude Code delegate tasks to Google Antigravity CLI (agy)",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "antigravity-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
